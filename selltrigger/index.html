@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DayTrading Inc</title>
+    </head>
+    <body>
+        <h1>Buy Triggers</h1>
+        <ul>
+            <li><a href=/add>Add</a></li>
+            <li><a href=/buy>Buy</a></li>
+            <li><a href=/sell>Sell</a></li>
+            <li><a href=/quote>Quote</a></li>
+            <li><a href=/buytrigger>Buy Triggers</a></li>
+            <li><a href=/selltrigger>Buy Triggers</a></li>
+            <li><a href=/summary>Summary</a></li>
+        </ul>
+        <br>
+        <form action="/result" method="post">
+            Add Trigger Amount<br>
+            Username <input type="text" name="username" value="" Id="username"><br>
+            Stock-ID <input type="text" name="stock"><br>
+            Amount <input type="text" name="amount"><br>
+            <input type="hidden" name="command" value="SET_BUY_AMOUNT">
+            <input type="submit" value="Submit">
+        </form>
+        <br>
+        <form action="/result" method="post">
+            Add Trigger Price Point<br>
+            Username <input type="text" name="username" value="" Id="username"><br>
+            Stock-ID <input type="text" name="stock"><br>
+            Value <input type="text" name="amount"><br>
+            <input type="hidden" name="command" value="SET_BUY_TRIGGER">
+            <input type="submit" value="Submit">
+        </form>
+        <br>
+        <form action="/result" method="post">
+            Cancel Trigger for Stock<br>
+            Username <input type="text" name="username" value="" Id="username"><br>
+            Stock-ID <input type="text" name="stock"><br>
+            <input type="hidden" name="command" value="CANCEL_SET_BUY">
+            <input type="submit" value="Submit">
+        </form>
+
+
+</body>
+</html>

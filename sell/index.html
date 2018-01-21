@@ -10,14 +10,16 @@
             <li><a href=/buy>Buy</a></li>
             <li><a href=/sell>Sell</a></li>
             <li><a href=/quote>Quote</a></li>
+            <li><a href=/buytrigger>Buy Triggers</a></li>
+            <li><a href=/selltrigger>Buy Triggers</a></li>
             <li><a href=/summary>Summary</a></li>
-            <li><a href=/triggers>Trigger</a></li>
         </ul>
         <br>
-        <form action="/sell" method="post">
+        <form action="/result" method="post">
             Username <input type="text" name="username" value="" Id="username"><br>
-            Stock-ID <input type="text" name="amount"> <br>
-            Value <input type="text" name="amount"> <br>
+            Stock-ID <input type="text" name="stock"><br>
+            Value <input type="text" name="amount"><br>
+            <input type="hidden" name="command" value="SELL">
             <input type="submit" value="Submit">
         </form> 
 

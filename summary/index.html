@@ -10,13 +10,15 @@
             <li><a href=/buy>Buy</a></li>
             <li><a href=/sell>Sell</a></li>
             <li><a href=/quote>Quote</a></li>
+            <li><a href=/buytrigger>Buy Triggers</a></li>
+            <li><a href=/selltrigger>Buy Triggers</a></li>
             <li><a href=/summary>Summary</a></li>
-            <li><a href=/triggers>Trigger</a></li>
         </ul>
         <br>
-        <form action="/summary" method="post">
+        <form action="/result" method="post">
             Summarize Account Activity<br>
             Username <input type="text" name="username" value="" Id="username"><br>
+            <input type="hidden" name="command" value="DISPLAY_SUMMARY">
             <input type="submit" value="Submit">
         </form> 
 
