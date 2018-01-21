@@ -4,16 +4,21 @@
         <title>DayTrading Inc</title>
     </head>
     <body>
-        <h1>Welcome</h1>
-        <h2>Choose DayTrading Option</h2>
+        <h1>Add Funds</h1>
         <ul>
             <li><a href=/add>Add</a></li>
             <li><a href=/buy>Buy</a></li>
             <li><a href=/sell>Sell</a></li>
             <li><a href=/quote>Quote</a></li>
+            <li><a href=/audit>Audit</a></li>
             <li><a href=/summary>Summary</a></li>
             <li><a href=/triggers>Trigger</a></li>
         </ul>
+        <form action="/add" method="post">
+            Username <input type="text" name="username" value="" Id="username"><br>
+            Amount <input type="text" name="amount"> <br>
+            <input type="submit" value="Submit">
+        </form> 
 
 
 </body>

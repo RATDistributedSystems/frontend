@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DayTrading Inc</title>
+    </head>
+    <body>
+        <h1>Triggers</h1>
+        <ul>
+            <li><a href=/add>Add</a></li>
+            <li><a href=/buy>Buy</a></li>
+            <li><a href=/sell>Sell</a></li>
+            <li><a href=/quote>Quote</a></li>
+            <li><a href=/summary>Summary</a></li>
+            <li><a href=/triggers>Trigger</a></li>
+        </ul>
+        <br>
+        <form action="/buytrigger" method="post">
+            Add Trigger for Buying Stock<br>
+            Username <input type="text" name="username" value="" Id="username"><br>
+            Stock-ID <input type="text" name="amount"> <br>
+            Value <input type="text" name="amount"> <br>
+            <input type="submit" value="Submit">
+        </form>
+        <br>
+        <form action="/selltrigger" method="post">
+            Add Trigger for Selling Stock<br>
+            Username <input type="text" name="username" value="" Id="username"><br>
+            Stock-ID <input type="text" name="amount"> <br>
+            Value <input type="text" name="amount"> <br>
+            <input type="submit" value="Submit">
+        </form>
+        <br>
+        <form action="/canceltrigger" method="post">
+            Cancel Trigger for Stock<br>
+            Username <input type="text" name="username" value="" Id="username"><br>
+            Stock-ID <input type="text" name="amount"> <br>
+            <input type="submit" value="Submit">
+        </form>
+
+
+</body>
+</html>
