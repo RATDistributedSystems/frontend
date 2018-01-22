@@ -4,7 +4,7 @@
         <title>DayTrading Inc</title>
     </head>
     <body>
-        <h1>Sell Triggers</h1>
+        <h1>Commit Transactions</h1>
         <ul>
             <li><a href=/add>Add</a></li>
             <li><a href=/buy>Buy</a></li>
@@ -17,31 +17,31 @@
         </ul>
         <br>
         <form action="/result" method="post">
-            Add Trigger Amount<br>
+            Commit last buy command<br>
             Username <input type="text" name="username" value="" Id="username"><br>
-            Stock-ID <input type="text" name="stock"><br>
-            Amount <input type="text" name="amount"><br>
-            <input type="hidden" name="command" value="SET_SELL_AMOUNT">
+            <input type="hidden" name="command" value="COMMIT_BUY">
             <input type="submit" value="Submit">
-        </form>
+        </form> 
         <br>
         <form action="/result" method="post">
-            Add Trigger Price Point<br>
+            Cancel last buy command<br>
             Username <input type="text" name="username" value="" Id="username"><br>
-            Stock-ID <input type="text" name="stock"><br>
-            Value <input type="text" name="amount"><br>
-            <input type="hidden" name="command" value="SET_SELL_TRIGGER">
+            <input type="hidden" name="command" value="CANCEL_BUY">
             <input type="submit" value="Submit">
-        </form>
+        </form> 
         <br>
         <form action="/result" method="post">
-            Cancel Trigger for Stock<br>
+            Commit last sell command<br>
             Username <input type="text" name="username" value="" Id="username"><br>
-            Stock-ID <input type="text" name="stock"><br>
-            <input type="hidden" name="command" value="CANCEL_SET_SELL">
+            <input type="hidden" name="command" value="COMMIT_SELL">
             <input type="submit" value="Submit">
-        </form>
+        </form> 
+        <br>
+        <form action="/result" method="post">
+            Cancel last sell command<br>
+            Username <input type="text" name="username" value="" Id="username"><br>
+            <input type="hidden" name="command" value="CANCEL_SELL">
+            <input type="submit" value="Submit">
+        </form> 
 
-
-</body>
-</html>
+<!--Add Stuff Here-->
