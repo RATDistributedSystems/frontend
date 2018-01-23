@@ -1,4 +1,3 @@
-test
-handler
+server
 Caddyfile
-tserver.conf
+tserver.json
