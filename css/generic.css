@@ -1,0 +1,16 @@
+
+.welcometab{
+	text-align: center;
+}
+
+.welcometab a {
+	width:70%;
+	margin-bottom: 15px;
+	border-radius: 3px;
+}
+
+.welcometab h2{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+

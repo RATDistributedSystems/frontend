@@ -1,0 +1,16 @@
+
+
+.welcometab a {
+	width:100%;
+	margin-bottom: 15px;
+	border-radius: 3px;
+}
+
+.welcometab h2{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.container{
+	margin-top:40px;
+}
