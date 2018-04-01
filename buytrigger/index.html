@@ -2,53 +2,63 @@
 <html>
     <head>
         <title>RATrading Inc</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="/css/generic.css">
+        <link rel="stylesheet" href="/css/commandPages.css">
+        <link rel="stylesheet" href="/css/bs/bootstrap.min.css">
     </head>
     <body>
+
+
+
         <nav class="navbar navbar-dark bg-dark">
-            <span class="navbar-brand mb-0 h1"><h3>RATrading Inc.</h3></span>
+            <a class="navbar-brand" href="/index.html">RATrading Inc.</a>
         </nav>
-        <h1>Sell Triggers</h1>
-        <ul>
-            <li><a href=/add>Add</a></li>
-            <li><a href=/buy>Buy</a></li>
-            <li><a href=/sell>Sell</a></li>
-            <li><a href=/commit>Commit</a></li>
-            <li><a href=/quote>Quote</a></li>
-            <li><a href=/buytrigger>Buy Triggers</a></li>
-            <li><a href=/selltrigger>Buy Triggers</a></li>
-            <li><a href=/summary>Summary</a></li>
-        </ul>
-        <br>
+
+        <div class="container">
+             <h2>Buy Trigger</h2>
+            <div class="row">
+                <div class="col-md-3 welcometab">
+                        <a class="btn btn-primary btn-lg  btn-outline-secondary" role ="button" href=/add>Add</a>
+                        <a class="btn btn-primary btn-lg  btn-outline-secondary" role ="button" href=/buy>Buy</a>
+                        <a class="btn btn-primary btn-lg  btn-outline-secondary" role ="button" href=/sell>Sell</a>
+                        <a class="btn btn-primary btn-lg  btn-outline-secondary" role ="button" href=/commit>Commit</a>
+                        <a class="btn btn-primary btn-lg  btn-outline-secondary" role ="button" href=/quote>Quote</a>
+                        <a class="btn btn-primary btn-lg active  btn-outline-primary" role ="button" href=/buytrigger>Buy Triggers</a>
+                        <a class="btn btn-primary btn-lg  btn-outline-secondary" role ="button" href=/selltrigger>Sell Triggers</a>
+                        <a class="btn btn-primary btn-lg  btn-outline-secondary" role ="button" href=/summary>Summary</a>
+                </div>
+                <div class="col-md-9">
+
         <form action="/result" method="post">
-            Add Trigger Amount<br>
-            Username <input type="text" name="username" value="" Id="username"><br>
-            Stock-ID <input type="text" name="stock"><br>
-            Amount <input type="text" name="amount"><br>
-            <input type="hidden" name="command" value="SET_SELL_AMOUNT">
-            <input type="submit" value="Submit">
+            Add Trigger Amount
+            <input class="form-control" placeholder="Username" type="text" name="username" value="" Id="username"><br>
+            <input class="form-control" placeholder="Stock ID" type="text" name="stock"><br>
+            <input class="form-control" placeholder="Amount" type="text" name="amount"><br>
+            <input class="form-control" type="hidden" name="command" value="SET_SELL_AMOUNT">
+            <input class="btn btn-outline-success" type="submit" value="Submit">
         </form>
         <br>
         <form action="/result" method="post">
-            Add Trigger Price Point<br>
-            Username <input type="text" name="username" value="" Id="username"><br>
-            Stock-ID <input type="text" name="stock"><br>
-            Value <input type="text" name="amount"><br>
+            Add Trigger Price Point
+            <input class="form-control" placeholder="Username" type="text" name="username" value="" Id="username"><br>
+            <input class="form-control" placeholder="Stock-ID" type="text" name="stock"><br>
+            <input class="form-control" placeholder="Value" type="text" name="amount"><br>
             <input type="hidden" name="command" value="SET_SELL_TRIGGER">
-            <input type="submit" value="Submit">
+            <input class="btn btn-outline-success" type="submit" value="Submit">
         </form>
         <br>
         <form action="/result" method="post">
-            Cancel Trigger for Stock<br>
-            Username <input type="text" name="username" value="" Id="username"><br>
-            Stock-ID <input type="text" name="stock"><br>
+            Cancel Trigger for Stock
+            <input class="form-control" placeholder="Username" type="text" name="username" value="" Id="username"><br>
+            <input class="form-control" placeholder="Stock-ID" type="text" name="stock"><br>
             <input type="hidden" name="command" value="CANCEL_SET_SELL">
-            <input type="submit" value="Submit">
+            <input class="btn btn-outline-success" type="submit" value="Submit">
         </form>
+
+
+                </div>
+            </div>
+        </div>
+
 
 
 </body>
